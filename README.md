@@ -1,1 +1,1 @@
-# messages-api
+# messages-search-api
