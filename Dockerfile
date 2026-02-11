@@ -4,8 +4,8 @@ ENV PYTHONUNBUFFERED=1 PYTHONDONTWRITEBYTECODE=1
 
 RUN pip install --no-cache-dir uv
 
-COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen --no-dev
+COPY pyproject.toml ./
+RUN uv sync --no-dev
 
 COPY app/ ./app/
 
